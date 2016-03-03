@@ -1,5 +1,3 @@
-/// <reference path="../interfaces.d.ts"/>
-
 export class Run implements RunInterface {
      constructor(){}
      

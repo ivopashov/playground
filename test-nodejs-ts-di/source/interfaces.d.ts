@@ -1,4 +1,4 @@
-interface AthleteInterface{
+interface AthleteInterface {
     saySports() : void;
 }
 

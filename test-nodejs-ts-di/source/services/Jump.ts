@@ -1,5 +1,7 @@
-export class Jump implements JumpInterface{
+class Jump implements JumpInterface{
     jump(){
         console.log("I can jump");
     }
 }
+
+export=Jump

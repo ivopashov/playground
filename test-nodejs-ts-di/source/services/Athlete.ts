@@ -1,7 +1,7 @@
 import inversify = require('inversify');
 
 @inversify.Inject("RunInterface","JumpInterface")
-export class Athlete implements AthleteInterface{
+class Athlete implements AthleteInterface{
     public runAction : RunInterface;
     public jumpAction : JumpInterface;
     
@@ -16,3 +16,5 @@ export class Athlete implements AthleteInterface{
         this.runAction.run();
     }
 }
+
+export = Athlete

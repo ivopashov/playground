@@ -18,7 +18,7 @@ import Athlete = require('./source/services/Athlete')
 // }  
 
 var kernel = new inversify.Kernel(); 
-kernel.bind(new inversify.TypeBinding<RunInterface>("RunInterface", <any>Run.Run));
-kernel.bind(new inversify.TypeBinding<JumpInterface>("JumpInterface", <any>Jump.Jump));
-kernel.bind(new inversify.TypeBinding<AthleteInterface>("AthleteInterface", <any>Athlete.Athlete));
+kernel.bind(new inversify.TypeBinding<RunInterface>("RunInterface", <any>Run));
+kernel.bind(new inversify.TypeBinding<JumpInterface>("JumpInterface", <any>Jump));
+kernel.bind(new inversify.TypeBinding<AthleteInterface>("AthleteInterface", <any>Athlete));
 export = kernel
